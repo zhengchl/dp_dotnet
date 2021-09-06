@@ -41,7 +41,7 @@ namespace dp_dotnet {
 
         }
         public override string getText() {
-            return "<u>" + this.node.getText() + "</b>";
+            return "<u>" + this.node.getText() + "</u>";
         }
     }
 }
