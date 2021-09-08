@@ -25,6 +25,12 @@ namespace dp_dotnet {
             Console.WriteLine(span1.getText());
             Console.WriteLine(span2.getText());
         }
+        static void ObserverDemo() {
+            Store store = new Store();
+            store.Add(new Manager());
+            store.Add(new Seller());
+            store.Sell("shoes");
+        }
         static void Main(string[] args) {
             Console.WriteLine("Call AdaptorDemo");
             AdaptorDemo();
@@ -32,6 +38,8 @@ namespace dp_dotnet {
             ResponsibilityChainDemo();
             Console.WriteLine("Call DecoratorDemo");
             DecoratorDemo();
+            Console.WriteLine("Call ObserverDemo");
+            ObserverDemo();
         }
     }
 }
